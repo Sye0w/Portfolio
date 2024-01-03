@@ -1,0 +1,44 @@
+[
+    {
+      "title":"Galleria Slideshow",
+      "description": "",
+      "link":"https://galleria-slideshow-nu.vercel.app",
+      "tools/stacks":"Figma,tailwindcss,JS,HTML,Vite"
+    },
+    {
+      "title":"Devjobs Web app",
+      "description": "",
+      "link":"https://devjobs-web-app-zeta.vercel.app",
+      "tools/stacks":"Figma,tailwindcss,JS,HTML,Vite"
+    },
+    {
+      "title":"Rest Country API",
+      "description": "",
+      "link":"https://rest-countries-api-react-tsx.vercel.app",
+      "tools/stacks":"Figma,tailwindcss,TS,React,HTML,Vite"
+    },
+    {
+      "title":"Ecommerce product page",
+      "description": "",
+      "link":"https://ecommerce-product-page-gray-pi.vercel.app",
+      "tools/stacks":"Figma,tailwindcss,TS,HTML,Vue,Vite"
+    },
+    {
+      "title":"Planets fact site",
+      "description": "",
+      "link":"https://ecommerce-product-page-gray-pi.vercel.app",
+      "tools/stacks":"Figma,tailwindcss,TS,React,HTML,Vite"
+    },
+    {
+      "title":"Myteam multi-page site",
+      "description": "",
+      "link":"",
+      "tools/stacks":"Figma,tailwindcss,TS,Angular,HTML,Vite"
+    },
+    {
+      "title":"Entertainment web app",
+      "description": "",
+      "link":"",
+      "tools/stacks":"Figma,Tailwindcss,TS,Vue,HTML,Vite"
+    },
+  ]

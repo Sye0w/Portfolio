@@ -6,7 +6,9 @@ export default {
     "./src/**/*.{vue,ts,js}",
   ],
   theme: {
-    fontFamily: {},
+    fontFamily: {
+      'manrope':['Manrope','sans-serif']
+    },
     colors:{},
     extend: {},
   },
