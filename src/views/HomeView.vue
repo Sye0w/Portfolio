@@ -4,8 +4,17 @@
   import React from '../assets/react (1).png'
   import Vue from '../assets/vue.png'
   import Angular from '../assets/angular.png'
+  import EntertainBg from '../assets/entertain-desk.jpg';
+  import PlanetBg from '../assets/planet-desk.jpg'   
+  import EcommerceBg from '../assets/ecommerce-desk.jpg'   
+  import RestBg from '../assets/rest-desk.jpg'   
+  import DevjobsBg from '../assets/devjobs-view.jpg'   
+  import GalleriaBg from '../assets/galleria-desk.jpg'   
+  import MyteamBg from '../assets/myteam-desk.jpg'   
   import Vuetify from '../assets/vuetify.svg'
   import Antd from '../assets/antd.svg'
+  import Html from '../assets/html.png'
+  import Vite from '../assets/vite.svg';
   import Tailwind from '../assets/tailwind.svg'
   import JS from '../assets/javascript.png'
   import TS from '../assets/typescript.png'
@@ -15,15 +24,7 @@
   import Pointer from '../assets/pointer.png'
   // import data from '../assets/data'
 
-  const stacks = [
-    { angular: Angular },
-    { react: React },
-    { vue: Vue },
-    { JS: JS },
-    { TS: TS },
-    { Tailwindcss: Tailwind }
-  ]
-
+  
   interface Project {
     title: string;
     desc: string;
@@ -40,85 +41,86 @@
       "desc": "",
       "link": "https://galleria-slideshow-nu.vercel.app",
       "stacks": [
-        { "tailwind": "./Tailwind.svg" },
-        { "js": "./javascript.png" },
-        { "html": "" },
-        { "vite": "" }
+        { "tailwind": Tailwind },
+        { "js": JS },
+        { "react": React},
+        { "html": Html},
+        { "vite": Vite }
       ],
-      "image": "../assets/galleria-desk.JPG"
+      "image": GalleriaBg
     },
     {
       "title": "Devjobs Web app",
       "desc": "A web based platform to visualize devjobs; sort/filter jobs on some preference, detailed page for each job and theme for both modes.",
       "link": "https://devjobs-web-app-zeta.vercel.app",
       "stacks": [
-        { "tailwind": "./Tailwind.svg" },
-        { "js": "./javascript.png" },
-        { "html": "" },
-        { "vite": "" }
+        { "tailwind": Tailwind },
+        { "js": JS },
+        { "html": Html},        
+        { "vite": Vite }
       ],
-      "image": "../assets/devjobs-view.JPG"
+      "image": DevjobsBg
     },
     {
       "title": "Rest Country API",
       "desc": "",
       "link": "https://rest-countries-api-react-tsx.vercel.app",
       "stacks": [
-        { "tailwind": "./Tailwind.svg" },
-        { "js": "./javascript.png" },
-        { "html": "" },
-        { "vite": "" }
+        { "tailwind": Tailwind },
+        { "js": JS },
+        { "html": Html},
+        { "vite": Vite }
       ],
-      "image": "../assets/rest-desk.jpg"
+      "image": RestBg
     },
     {
       "title": "Ecommerce product page",
       "desc": "An ecommerce platform for a single product",
       "link": "https://ecommerce-product-page-gray-pi.vercel.app",
       "stacks": [
-        { "tailwind": "./Tailwind.svg" },
-        { "js": "./javascript.png" },
-        { "html": "" },
-        { "vite": "" }
+        { "tailwind": Tailwind },
+        { "js": JS },
+        { "html": Html},
+        { "vite": Vite }
       ],
-      "image": "../assets/ecommerce-desk.jpg"
+      "image": EcommerceBg 
     },
     {
       "title": "Planets fact site",
       "desc": "",
       "link": "https://ecommerce-product-page-gray-pi.vercel.app",
       "stacks": [
-        { "tailwind": "./Tailwind.svg" },
-        { "js": "./javascript.png" },
-        { "html": "" },
-        { "vite": "" }
+        { "tailwind": Tailwind },
+        { "js": JS },
+        { "html": Html},
+        { "vite": Vite }
       ],
-      "image": "../assets/planet-desk.jpg"
+      "image": PlanetBg
     },
     {
       "title": "Myteam multi-page site",
       "desc": "An informational website for showcasing talents for companies, team building experience and collaborations.",
       "link": "",
       "stacks": [
-        { "tailwind": "./Tailwind.svg" },
-        { "js": "./javascript.png" },
-        { "html": "" },
-        { "vite": "" }
+        { "tailwind": Tailwind },
+        { "js": JS },
+        { "html": Html},
+        { "vite": Vite }
       ],
-      "image": "../assets/"
+      "image": MyteamBg
     },
     {
       "title": "Entertainment web app",
       "desc": "",
       "link": "",
       "stacks": [
-        { "tailwind": "./Tailwind.svg" },
-        { "ts": "./typescript.svg" },
-        { "vue": "./vue.png" },
-        { "html": "./" },
-        { "vite": "" }
+        { "tailwind": Tailwind },
+        { "ts": TS },
+        { "vue": Vue },
+        { "html": Html},
+        { "vite": Vite }
       ],
-      "image": "../assets/entertain-desk.jpg"
+      "image": EntertainBg
     }
   ]
 </script>
@@ -140,7 +142,6 @@
             <img :src="Angular" alt="ang-logo" class="w-[1.5rem]" />
             <img :src="Vuetify" alt="vuetify-logo" class="w-[1.5rem]" />
             <img :src="Antd" alt="antd-logo" class="w-[1.5rem]" />
-            <br />
             <img :src="Tailwind" alt="tailwind-logo" class="w-[1.5rem]" />
             <img :src="Git" alt="git-logo" class="w-[1.5rem]" />
             <img :src="Github" alt="github-logo" class="w-[1.5rem]" />
@@ -163,15 +164,18 @@
       /></span>
       <v-carousel cycle show-arrows="hover" height="550">
         <v-carousel-item v-for="(item, index) in data" :key="index">
-          <v-sheet height="100%" color="#a0b4dc" >
-            <div class="border-2 flex pa-10 h-full">
-              <div class="text-[#fff]">
+          <v-sheet height="100%" color="#a0b4dc" class="" :style="{ backgroundImage: `url(${item.image})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',  backgroundBlendMode: 'multiply' }" >
+            <div class="pa-10  text-[#fff] h-full bg-[#1a1a1a]  backdrop-blur-[0.125rem] bg-opacity-5 flex flex-col ">
+              <div class="flex flex-col gap-y-2">
                 <h1 class="text-[2rem] text-[#fff] font-bold">{{ item.title }}</h1>
-                {{ console.log(item.image)}}
-                <p class="text-[1.3rem]">{{ item.desc ? item.desc : 'none yet' }}</p>
-                <a class="text-[1.25rem]" :href="item.link" target="_">link</a>
+                <p class="text-[1.1rem] w-[28.5rem] leading-relaxed">{{ item.desc ? item.desc : 'none yet' }}</p>
+                <span class="flex gap-2">
+                  <span v-for="(stack, stackIndex) in item.stacks" :key="stackIndex">
+                    <img :src="Object.values(stack)" alt="stack-log" class="w-[1.5rem]"/>
+                  </span>
+                </span>
               </div>
-              <img   :src="item.image"/>
+              <a class="text-[1.25rem] underline absolute top-[28rem]" :href="item.link" target="_">site</a>
             </div>
           </v-sheet>
         </v-carousel-item>
@@ -179,3 +183,5 @@
     </div>
   </v-container>
 </template>
+
+
