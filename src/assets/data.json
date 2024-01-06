@@ -1,44 +1,91 @@
-[
-  {
-    "title": "Galleria Slideshow",
-    "desc": "",
-    "link": "https://galleria-slideshow-nu.vercel.app",
-    "stacks": "Figma,tailwindcss,JS,HTML,Vite"
-  },
-  {
-    "title": "Devjobs Web app",
-    "desc": "",
-    "link": "https://devjobs-web-app-zeta.vercel.app",
-    "stacks": "tailwindcss,JS,HTML,Vite"
-  },
-  {
-    "title": "Rest Country API",
-    "desc": "",
-    "link": "https://rest-countries-api-react-tsx.vercel.app",
-    "stacks": "tailwindcss,TS,React,HTML,Vite"
-  },
-  {
-    "title": "Ecommerce product page",
-    "desc": "An ecommerce platform for a single product",
-    "link": "https://ecommerce-product-page-gray-pi.vercel.app",
-    "stacks": "tailwindcss,TS,HTML,Vue,Vite"
-  },
-  {
-    "title": "Planets fact site",
-    "desc": "",
-    "link": "https://ecommerce-product-page-gray-pi.vercel.app",
-    "stacks": "tailwindcss,TS,React,HTML,Vite"
-  },
-  {
-    "title": "Myteam multi-page site",
-    "desc": "An informational website for showcasing talents for companies, team building experience and collaborations.",
-    "link": "",
-    "stacks": "tailwindcss,TS,Angular,HTML,Vite"
-  },
-  {
-    "title": "Entertainment web app",
-    "desc": "",
-    "link": "",
-    "stacks": "Tailwindcss,TS,Vue,HTML,Vite"
-  }
-]
+
+
+
+// [
+//   {
+//     "title": "Galleria Slideshow",
+//     "desc": "",
+//     "link": "https://galleria-slideshow-nu.vercel.app",
+//     "stacks": [
+//       { "tailwind": "./Tailwind.svg" },
+//       { "js": "./javascript.png" },
+//       { "html": "" },
+//       { "vite": "" }
+//     // ],
+//     "image": "../assets/galleria-desk.JPG"
+//   },
+//   {
+//     "title": "Devjobs Web app",
+//     "desc": "A web based platform to visualize devjobs; sort/filter jobs on some preference, detailed page for each job and theme for both modes.",
+//     "link": "https://devjobs-web-app-zeta.vercel.app",
+//     "stacks": [
+//       { "tailwind": "./Tailwind.svg" },
+//       { "js": "./javascript.png" },
+//       { "html": "" },
+//       { "vite": "" }
+//     ],
+//     "image": "../assets/devjobs-view.JPG"
+//   },
+//   {
+//     "title": "Rest Country API",
+//     "desc": "",
+//     "link": "https://rest-countries-api-react-tsx.vercel.app",
+//     "stacks": [
+//       { "tailwind": "./Tailwind.svg" },
+//       { "js": "./javascript.png" },
+//       { "html": "" },
+//       { "vite": "" }
+//     ],
+//     "image": "../assets/rest-desk.jpg"
+//   },
+//   {
+//     "title": "Ecommerce product page",
+//     "desc": "An ecommerce platform for a single product",
+//     "link": "https://ecommerce-product-page-gray-pi.vercel.app",
+//     "stacks": [
+//       { "tailwind": "./Tailwind.svg" },
+//       { "js": "./javascript.png" },
+//       { "html": "" },
+//       { "vite": "" }
+//     ],
+//     "image": "../assets/ecommerce-desk.jpg"
+//   },
+//   {
+//     "title": "Planets fact site",
+//     "desc": "",
+//     "link": "https://ecommerce-product-page-gray-pi.vercel.app",
+//     "stacks": [
+//       { "tailwind": "./Tailwind.svg" },
+//       { "js": "./javascript.png" },
+//       { "html": "" },
+//       { "vite": "" }
+//     ],
+//     "image": "../assets/planet-desk.jpg"
+//   },
+//   {
+//     "title": "Myteam multi-page site",
+//     "desc": "An informational website for showcasing talents for companies, team building experience and collaborations.",
+//     "link": "",
+//     "stacks": [
+//       { "tailwind": "./Tailwind.svg" },
+//       { "js": "./javascript.png" },
+//       { "html": "" },
+//       { "vite": "" }
+//     ],
+//     "image": "../assets/"
+//   },
+//   {
+//     "title": "Entertainment web app",
+//     "desc": "",
+//     "link": "",
+//     "stacks": [
+//       { "tailwind": "./Tailwind.svg" },
+//       { "ts": "./typescript.svg" },
+//       { "vue": "./vue.png" },
+//       { "html": "./" },
+//       { "vite": "" }
+//     ],
+//     "image": "../assets/entertain-desk.jpg"
+//   }
+// ]
+  

@@ -1,9 +1,12 @@
 <script setup lang="ts">
-  import LinkedIn from './assets/linkedin.png'
-  import { RouterLink, RouterView } from 'vue-router'
-  import { ref } from 'vue' 
+import LinkedIn from './assets/linkedin.png'
+import { RouterLink, RouterView } from 'vue-router'
+import { ref } from 'vue'
 
-  const isClicked = ref('Home')
+const isClicked = ref<string>('Home')
+const clickEfx = (option: string) => {
+  isClicked.value = option
+}
 </script>
 
 <template>
@@ -11,23 +14,41 @@
     <v-app-bar
       scroll-behavior="elevate"
       scroll-threshold="2"
-      class="border-b d-flex  border-[#123b8a] px-[8rem]"
+      class="border-b d-flex border-[#123b8a] px-[8rem]"
     >
       <!-- <h1 >Syeow</-app-bar-title> -->
       <div class="flex gap-[6.25rem] children:font-medium uppercase">
-        <div class="text-[#123B8A] d-flex">
+        <div class="text-[#123B8A] d-flex" @click="clickEfx('Home')">
           <v-icon color="" icon="mdi-home-outline" size="small"></v-icon>
-          <router-link to="/" class="text-[1.25rem]"> Home </router-link>
+          <router-link
+            to="/"
+            class="text-[1.25rem]"
+            :class="isClicked === 'Home' ? 'text-[#123b8a]' : 'text-[#272727]'"
+          >
+            Home
+          </router-link>
         </div>
-        <div class="text-[#272727] hover:text-[#123B8A]">
-          <router-link class="text-[1.25rem]" to="/about">About</router-link>
+        <div class="text-[#272727] hover:text-[#123B8A]" @click="clickEfx('About')">
+          <router-link
+            class="text-[1.25rem]"
+            :class="isClicked === 'About' ? 'text-[#123b8a]' : ''"
+            to="/about"
+            >
+            About
+          </router-link>
+          
         </div>
-        <div class="text-[#272727] hover:text-[#123B8A]">
-          <router-link class="text-[1.25rem]" to="/resume">Resume</router-link>
+        <div class="text-[#272727] hover:text-[#123B8A]" @click="clickEfx('Resume')">
+          <router-link
+            class="text-[1.25rem]"
+            :class="isClicked === 'Resume' ? 'text-[#123b8a]' : ''"
+            to="/resume"
+            >Resume</router-link
+          >
         </div>
       </div>
     </v-app-bar>
-    <v-main class="mx-[8rem] my-[6.25rem] ">
+    <v-main class="mx-[8rem] my-[6.25rem]">
       <v-fade-transition>
         <RouterView />
       </v-fade-transition>
