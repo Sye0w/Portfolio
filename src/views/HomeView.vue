@@ -145,7 +145,7 @@ const data: Project[] = [
                 </p>
                 <span class="flex gap-2">
                   <span v-for="(stack, stackIndex) in item.stacks" :key="stackIndex">
-                    <img :src="Object.values(stack)" alt="stack-log" class="w-[1.5rem]" />
+                    <img :src="Object.values(stack).join(',')" alt="stack-log" class="w-[1.5rem]" />
                   </span>
                 </span>
               </div>
