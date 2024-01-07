@@ -33,10 +33,9 @@ const clickEfx = (option: string) => {
             class="text-[1.25rem]"
             :class="isClicked === 'About' ? 'text-[#123b8a]' : ''"
             to="/about"
-            >
+          >
             About
           </router-link>
-          
         </div>
         <div class="text-[#272727] hover:text-[#123B8A]" @click="clickEfx('Resume')">
           <router-link

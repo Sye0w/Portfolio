@@ -9,7 +9,7 @@
           <div class="flex flex-col gap-y-8">
             <div class="flex gap-3 items-center">
               <v-icon icon="mdi-email-outline" color="#123b8a"></v-icon>
-              <p class="text-[#272727] text-[1.5rem] underline ">owusilasyp00@gmail.com</p>
+              <p class="text-[#272727] text-[1.5rem] underline">owusilasyp00@gmail.com</p>
             </div>
             <div class="flex gap-3 items-center">
               <v-icon icon="mdi-phone-outline" color="#123b8a"></v-icon>
@@ -28,8 +28,11 @@
         <h2 class="text-[#fff] text-[1.75rem] font-bold">Summary</h2>
       </div>
       <ul class="pl-4">
-        <li class="text-[#272727]  text-[1.25rem] list-disc">A self-paced Frontend Developer with less than a year of experience yet with a function of continuous learning, fuels of curiosity, and code reviews  
-          that grow my experiential knowledge whenever I build projects.</li>
+        <li class="text-[#272727] text-[1.25rem] list-disc">
+          A self-paced Frontend Developer with less than a year of experience yet with a function of
+          continuous learning, fuels of curiosity, and code reviews that grow my experiential
+          knowledge whenever I build projects.
+        </li>
       </ul>
     </div>
     <div class="flex flex-col gap-y-4">
@@ -37,18 +40,24 @@
         <h2 class="text-[#fff] text-[1.75rem] font-bold">Experience</h2>
       </div>
       <div class="pl-4">
-        <div class="flex justify-between text-bold text-[1.5rem] text-[#272727]">Amalitech Ghana, National Service Personnel Frontend Junior Associate,<span>Nov 2022 - Sept 2023</span></div>
+        <div class="flex justify-between text-bold text-[1.5rem] text-[#272727]">
+          Amalitech Ghana, National Service Personnel Frontend Junior Associate,<span
+            >Nov 2022 - Sept 2023</span
+          >
+        </div>
         <ul class="list-disc">
           <li>Acquired best practices in programming for a readable and maintainable codebase</li>
-          <li>Worked on the responsiveness of an internal project </li>
-          <li>Developed 5 frontend projects  and applied scrum methodology</li>
+          <li>Worked on the responsiveness of an internal project</li>
+          <li>Developed 5 frontend projects and applied scrum methodology</li>
           <li>Offer assistance to teammates with their code</li>
         </ul>
       </div>
       <div class="pl-4">
-        <div class="flex justify-between text-bold text-[1.5rem] text-[#272727]">Amalitech Ghana, UI/UX Designer Intern,<span >Oct 2021 - Dec 2021</span></div>
+        <div class="flex justify-between text-bold text-[1.5rem] text-[#272727]">
+          Amalitech Ghana, UI/UX Designer Intern,<span>Oct 2021 - Dec 2021</span>
+        </div>
         <ul class="list-disc">
-          <li>Designed Mobile UI components on an internal project with Adobe XD </li>
+          <li>Designed Mobile UI components on an internal project with Adobe XD</li>
         </ul>
       </div>
     </div>
@@ -75,7 +84,10 @@
         <h2 class="text-[#fff] text-[1.75rem] font-bold">Education</h2>
       </div>
       <ul class="list-disc pl-4">
-        <li>Bachelor of Science in Computer Science, University of Energy and Natural Resources, Sunyani-Ghana.2022</li>
+        <li>
+          Bachelor of Science in Computer Science, University of Energy and Natural Resources,
+          Sunyani-Ghana.2022
+        </li>
       </ul>
     </div>
     <div class="flex flex-col gap-y-6">
