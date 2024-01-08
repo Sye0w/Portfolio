@@ -35,7 +35,7 @@ interface Project {
 const data: Project[] = [
   {
     title: 'Galleria Slideshow',
-    desc: '',
+    desc: 'An art gallery with paintings from some great artist in history',
     link: 'https://galleria-slideshow-nu.vercel.app',
     stacks: [{ tailwind: Tailwind }, { js: JS }, { react: React }, { html: Html }, { vite: Vite }],
     image: GalleriaBg
