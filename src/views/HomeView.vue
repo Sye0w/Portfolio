@@ -49,7 +49,7 @@ const data: Project[] = [
   },
   {
     title: 'Rest Country API',
-    desc: '',
+    desc: 'A platform displaying rest country API data for countries and other related info.',
     link: 'https://rest-countries-api-react-tsx.vercel.app',
     stacks: [{ tailwind: Tailwind }, { js: JS }, { html: Html }, { vite: Vite }],
     image: RestBg
@@ -63,7 +63,7 @@ const data: Project[] = [
   },
   {
     title: 'Planets fact site',
-    desc: '',
+    desc: 'A site visualizing info about planets in the solar system',
     link: 'https://ecommerce-product-page-gray-pi.vercel.app',
     stacks: [{ tailwind: Tailwind }, { js: JS }, { html: Html }, { vite: Vite }],
     image: PlanetBg
@@ -71,14 +71,14 @@ const data: Project[] = [
   {
     title: 'Myteam multi-page site',
     desc: 'An informational website for showcasing talents for companies, team building experience and collaborations.',
-    link: '',
+    link: 'https://myteam-multipage-website-5yeus.vercel.app/',
     stacks: [{ tailwind: Tailwind }, { js: JS }, { html: Html }, { vite: Vite }],
     image: MyteamBg
   },
   {
     title: 'Entertainment web app',
-    desc: '',
-    link: '',
+    desc: 'A movie site visualizing categories of movies and preferences that can be made',
+    link: 'https://entertainment-web-app-rosy-omega.vercel.app/',
     stacks: [{ tailwind: Tailwind }, { ts: TS }, { vue: Vue }, { html: Html }, { vite: Vite }],
     image: EntertainBg
   }
