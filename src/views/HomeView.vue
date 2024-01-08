@@ -64,7 +64,7 @@ const data: Project[] = [
   {
     title: 'Planets fact site',
     desc: 'A site visualizing info about planets in the solar system',
-    link: 'https://ecommerce-product-page-gray-pi.vercel.app',
+    link: 'https://planets-fact-site-83yc.vercel.app/',
     stacks: [{ tailwind: Tailwind }, { js: JS }, { html: Html }, { vite: Vite }],
     image: PlanetBg
   },
