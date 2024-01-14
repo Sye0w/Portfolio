@@ -4,12 +4,14 @@ import React from '@/assets/react(1).png'
 import Vue from '@/assets/vue.png'
 import Angular from '@/assets/angular.png'
 import EntertainBg from '@/assets/entertaindesk.jpg'
+import ProductBg from '@/assets/ProductBg.jpg'
 import PlanetBg from '@/assets/planetdesk.jpg'
 import EcommerceBg from '@/assets/ecommercedesk.jpg'
 import RestBg from '@/assets/restdesk.jpg'
 import DevjobsBg from '@/assets/devjobsview.jpg'
 import GalleriaBg from '@/assets/galleriadesk.jpg'
 import MyteamBg from '@/assets/myteamdesk.jpg'
+import GithubUserBg from '@/assets/GithubUserBg.jpg'
 import Vuetify from '@/assets/vuetify.svg'
 import Antd from '@/assets/antd.svg'
 import Html from '@/assets/html.png'
@@ -58,15 +60,22 @@ const data: Project[] = [
     title: 'Ecommerce product page',
     desc: 'An ecommerce platform for a single product',
     link: 'https://ecommerce-product-page-gray-pi.vercel.app',
-    stacks: [{ tailwind: Tailwind }, { js: JS }, { html: Html }, { vite: Vite }],
+    stacks: [{ tailwind: Tailwind }, { js: JS }, { html: Html }, { vite: Vite },{ vue: Vue}],
     image: EcommerceBg
   },
   {
     title: 'Planets fact site',
     desc: 'A site visualizing info about planets in the solar system',
-    link: 'https://planets-fact-site-83yc.vercel.app/',
-    stacks: [{ tailwind: Tailwind }, { js: JS }, { html: Html }, { vite: Vite }],
+    link: 'https://planets-fact-site-83yc.vercel.app',
+    stacks: [{ tailwind: Tailwind }, { js: JS }, { html: Html }, { vite: Vite },{react: React}],
     image: PlanetBg
+  },
+  {
+    title: 'GitHub user search app',
+    desc: 'Github User finder app is used to pull profile data and display it from GitHub users API',
+    link: 'https://github.com/Sye-5pace/Github_Devfinder_App',
+    stacks: [{ tailwind: Tailwind }, { ts: TS }, { html: Html }, { vite: Vite },{react: React}],
+    image: GithubUserBg
   },
   {
     title: 'Myteam multi-page site',
@@ -81,6 +90,13 @@ const data: Project[] = [
     link: 'https://entertainment-web-app-rosy-omega.vercel.app/',
     stacks: [{ tailwind: Tailwind }, { ts: TS }, { vue: Vue }, { html: Html }, { vite: Vite }],
     image: EntertainBg
+  },
+  {
+    title: 'Product feedback app',
+    desc: 'A platform that user share feedbacks about products.',
+    link: 'https://product-feedback-seven.vercel.app/',
+    stacks: [{ tailwind: Tailwind }, { ts: TS }, { vue: Vue }, { html: Html }, { vite: Vite }],
+    image: ProductBg
   }
 ]
 </script>
@@ -122,7 +138,7 @@ const data: Project[] = [
         </a>
         and check out my works below <img :src="Pointer" alt="pointer"
       /></span>
-      <v-carousel cycle show-arrows="hover" height="550">
+      <v-carousel cycle show-arrows="hover" height="600">
         <v-carousel-item v-for="(item, index) in data" :key="index">
           <v-sheet
             height="100%"
