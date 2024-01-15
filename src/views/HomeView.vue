@@ -102,9 +102,32 @@ const data: Project[] = [
 </script>
 
 <template>
-  <v-container class="flex flex-col gap-y-4 pa-0" fluid>
-    <div class="flex items-center justify-between">
-      <v-col class="text-[#123b8a] flex flex-col gap-y-[1.5rem] pa-0">
+  <v-container class="flex flex-col gap-y-4 pa-0 ga-sm-10" fluid>
+    <div class="flex items-center justify-between d-none d-md-flex ga-sm-10">
+      <v-col class="text-[#123b8a] flex flex-col gap-y-[1.5rem] pa-0 ">
+        <h3 class="flex items-center gap-2 text-[2.5rem] font-semibold">
+          Hi there! I am Silas Owu
+          <img :src="WaveHand" alt="wave" class="w-[3.375rem] h-[3.375rem]" />
+        </h3>
+        <div>
+          <p class="font-medium text-[1.5rem]">Front-end Developer</p>
+          <div class="flex gap-1">
+            <!-- <img :src="Figma" alt="figma-logo" class="w-[1.7rem]"/>  -->
+            <img :src="Vue" alt="vue-logo" class="w-[1.5rem]" />
+            <img :src="React" alt="react-logo" class="w-[1.5rem]" />
+            <img :src="Angular" alt="ang-logo" class="w-[1.5rem]" />
+            <img :src="Vuetify" alt="vuetify-logo" class="w-[1.5rem]" />
+            <img :src="Antd" alt="antd-logo" class="w-[1.5rem]" />
+            <img :src="Tailwind" alt="tailwind-logo" class="w-[1.5rem]" />
+            <img :src="Git" alt="git-logo" class="w-[1.5rem]" />
+            <img :src="Github" alt="github-logo" class="w-[1.5rem]" />
+          </div>
+        </div>
+      </v-col>
+      <img :src="Portfolio" alt="portfolio-image" class="w-[26.8125rem] " />
+    </div>
+    <div class="flex items-center justify-between   d-sm-flex flex-sm-column ga-sm-10">
+      <v-col class="text-[#123b8a] flex flex-col gap-y-[1.5rem] pa-0 ">
         <h3 class="flex items-center gap-2 text-[2.5rem] font-semibold">
           Hi there! I am Silas Owu
           <img :src="WaveHand" alt="wave" class="w-[3.375rem] h-[3.375rem]" />
@@ -127,8 +150,8 @@ const data: Project[] = [
       <img :src="Portfolio" alt="portfolio-image" class="w-[26.8125rem]" />
     </div>
     <div class="flex flex-col gap-[8rem]">
-      <span class="flex gap-1 text-[1.5rem]"
-        >Find me on
+      <div class="flex gap-1 d-xs-none d-sm-none text-[1.5rem] text-sm-h5 ga-sm-2">
+        Find me on
         <a
           class="text-[#123b8a] underline"
           href="https://www.linkedin.com/in/silas-owu-2475301b0/"
@@ -136,9 +159,21 @@ const data: Project[] = [
         >
           LinkedIn
         </a>
-        and check out my works below <img :src="Pointer" alt="pointer"
-      /></span>
+        and check out my works below <img :src="Pointer" alt="pointer"/>
+      </div>
+      <div class="flex text-[1.5rem] text-sm-h5 ga-sm-2 w-full d-sm">
+        Find me on
+        <a
+          class="text-[#123b8a] underline"
+          href="https://www.linkedin.com/in/silas-owu-2475301b0/"
+          target="_"
+        >
+          LinkedIn
+        </a>
+        check out my works below <img :src="Pointer" alt="pointer" class="hidden"/>
+      </div>
       <v-carousel cycle show-arrows="hover" height="600">
+        <h3 class="text-h5">Featured work and stacks:</h3>
         <v-carousel-item v-for="(item, index) in data" :key="index">
           <v-sheet
             height="100%"
