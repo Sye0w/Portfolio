@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import WaveHand from '@/assets/Wavehand.png'
-import React from '@/assets/react(1).png'
-import Vue from '@/assets/vue.png'
-import Angular from '@/assets/angular.png'
+import WaveHand   from '@/assets/Wavehand.png'
+import React      from '@/assets/react(1).png'
+import Vue        from '@/assets/vue.png'
+import Angular    from '@/assets/angular.png'
 import EntertainBg from '@/assets/entertaindesk.jpg'
-import ProductBg from '@/assets/ProductBg.jpg'
-import PlanetBg from '@/assets/planetdesk.jpg'
+import ProductBg  from '@/assets/ProductBg.jpg'
+import PlanetBg   from '@/assets/planetdesk.jpg'
 import EcommerceBg from '@/assets/ecommercedesk.jpg'
-import RestBg from '@/assets/restdesk.jpg'
+import RestBg      from '@/assets/restdesk.jpg'
 import DevjobsBg from '@/assets/devjobsview.jpg'
 import GalleriaBg from '@/assets/galleriadesk.jpg'
 import MyteamBg from '@/assets/myteamdesk.jpg'
@@ -23,6 +23,8 @@ import Github from '@/assets/github.png'
 import Git from '@/assets/git.png'
 import Portfolio from '@/assets/portfolioimg.png'
 import Pointer from '@/assets/pointer.png'
+
+import { defineProps,ref } from 'vue'
 
 interface Project {
   title: string
@@ -102,17 +104,17 @@ const data: Project[] = [
 </script>
 
 <template>
-  <v-container class="flex flex-col gap-y-4 pa-0 ga-sm-10" fluid>
-    <div class="flex items-center justify-between d-none d-md-flex ga-sm-10">
+  <v-container class="flex flex-col gap-y-4 pa-0 ga-sm-10 overflow-y-auto mobile:w-full" fluid >
+    <!-- <div class="flex items-center justify-between d-sm-none d-md-flex ga-sm-10">
       <v-col class="text-[#123b8a] flex flex-col gap-y-[1.5rem] pa-0 ">
-        <h3 class="flex items-center gap-2 text-[2.5rem] font-semibold">
-          Hi there! I am Silas Owu
+        <div class="flex items-center gap-2 text-[2.5rem] font-semibold">
+          <h2>Hi there! I am</h2> <span class="text-">Silas Owu</span>
           <img :src="WaveHand" alt="wave" class="w-[3.375rem] h-[3.375rem]" />
-        </h3>
+        </div>
         <div>
-          <p class="font-medium text-[1.5rem]">Front-end Developer</p>
+          <p class="font-medium text-[1.5rem]">Frontend Developer</p>
           <div class="flex gap-1">
-            <!-- <img :src="Figma" alt="figma-logo" class="w-[1.7rem]"/>  -->
+            <!-- <img :src="Figma" alt="figma-logo" class="w-[1.7rem]"/>  
             <img :src="Vue" alt="vue-logo" class="w-[1.5rem]" />
             <img :src="React" alt="react-logo" class="w-[1.5rem]" />
             <img :src="Angular" alt="ang-logo" class="w-[1.5rem]" />
@@ -125,15 +127,20 @@ const data: Project[] = [
         </div>
       </v-col>
       <img :src="Portfolio" alt="portfolio-image" class="w-[26.8125rem] " />
-    </div>
-    <div class="flex items-center justify-between   d-sm-flex flex-sm-column ga-sm-10">
-      <v-col class="text-[#123b8a] flex flex-col gap-y-[1.5rem] pa-0 ">
-        <h3 class="flex items-center gap-2 text-[2.5rem] font-semibold">
-          Hi there! I am Silas Owu
-          <img :src="WaveHand" alt="wave" class="w-[3.375rem] h-[3.375rem]" />
-        </h3>
+    </div> -->
+    
+    <!-- md & sm screens -->
+    <div class="flex items-center justify-between d-md  d-sm-flex flex-sm-column ga-sm-10  mobile:flex-col mobile:gap-y-8">
+      <v-col class=" flex flex-col gap-y-[0.6125rem] pa-0 ">
+        <div class=" flex items-center gap-2 text-[2.5rem] mobile:text-[1.5rem] font-semibold ">
+          <h2 class="text-[#123b8a]">Hi there! I am</h2> 
+          <span class="text-[#905c5a]">
+             Silas Owu
+            </span>
+            <img :src="WaveHand" alt="wave" class="w-[3.375rem] h-[3.375rem] mobile:w-[2rem] mobile:h-[2rem]" />
+        </div>
         <div>
-          <p class="font-medium text-[1.5rem]">Front-end Developer</p>
+          <p class="font-medium text-[1.5rem] text-[#123b8a]">Frontend Developer</p>
           <div class="flex gap-1">
             <!-- <img :src="Figma" alt="figma-logo" class="w-[1.7rem]"/>  -->
             <img :src="Vue" alt="vue-logo" class="w-[1.5rem]" />
@@ -147,11 +154,12 @@ const data: Project[] = [
           </div>
         </div>
       </v-col>
-      <img :src="Portfolio" alt="portfolio-image" class="w-[26.8125rem]" />
+      <img :src="Portfolio" alt="portfolio-image" class="w-[26.8125rem] relative left-[17rem] tablet:static mobile:static mobile:w-[17rem]" />
     </div>
-    <div class="flex flex-col gap-[8rem]">
-      <div class="flex gap-1 d-xs-none d-sm-none text-[1.5rem] text-sm-h5 ga-sm-2">
-        Find me on
+    
+    <div class="flex flex-col gap-[8rem]" >
+      <div class="flex gap-1 text-[1.5rem] text-sm-h5 ga-sm-2 d-md">
+        <h4>Find me on
         <a
           class="text-[#123b8a] underline"
           href="https://www.linkedin.com/in/silas-owu-2475301b0/"
@@ -159,54 +167,46 @@ const data: Project[] = [
         >
           LinkedIn
         </a>
-        and check out my works below <img :src="Pointer" alt="pointer"/>
+        and check out my works below <span><img :src="Pointer" alt="pointer"/></span>
+      </h4>
       </div>
-      <div class="flex text-[1.5rem] text-sm-h5 ga-sm-2 w-full d-sm">
-        Find me on
-        <a
-          class="text-[#123b8a] underline"
-          href="https://www.linkedin.com/in/silas-owu-2475301b0/"
-          target="_"
-        >
-          LinkedIn
-        </a>
-        check out my works below <img :src="Pointer" alt="pointer" class="hidden"/>
-      </div>
-      <v-carousel cycle show-arrows="hover" height="600">
+      <div>
         <h3 class="text-h5">Featured work and stacks:</h3>
-        <v-carousel-item v-for="(item, index) in data" :key="index">
-          <v-sheet
-            height="100%"
-            color="#a0b4dc"
-            class=""
-            :style="{
-              backgroundImage: `url(${item.image})`,
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              backgroundBlendMode: 'multiply'
-            }"
-          >
-            <div
-              class="pa-10 text-[#fff] h-full bg-[#1a1a1a] backdrop-blur-[0.125rem] bg-opacity-5 flex flex-col"
+        <v-carousel cycle show-arrows="hover" height="600" >
+          <v-carousel-item v-for="(item, index) in data" :key="index">
+            <v-sheet
+              height="100%"
+              color="#a0b4dc"
+              class=""
+              :style="{
+                backgroundImage: `url(${item.image})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                backgroundBlendMode: 'multiply'
+              }"
             >
-              <div class="flex flex-col gap-y-2">
-                <h1 class="text-[2rem] text-[#fff] font-bold">{{ item.title }}</h1>
-                <p class="text-[1.1rem] w-[28.5rem] leading-relaxed">
-                  {{ item.desc ? item.desc : 'none yet' }}
-                </p>
-                <span class="flex gap-2">
-                  <span v-for="(stack, stackIndex) in item.stacks" :key="stackIndex">
-                    <img :src="Object.values(stack).join(',')" alt="stack-log" class="w-[1.5rem]" />
-                  </span>
-                </span>
-              </div>
-              <a class="text-[1.25rem] underline absolute top-[28rem]" :href="item.link" target="_"
-                >site</a
+              <div
+                class="pa-10 text-[#fff] h-full bg-[#1a1a1a] backdrop-blur-[0.125rem] bg-opacity-5 flex flex-col"
               >
-            </div>
-          </v-sheet>
-        </v-carousel-item>
-      </v-carousel>
+                <div class="flex flex-col gap-y-2">
+                  <h1 class="text-[2rem] text-[#fff] font-bold">{{ item.title }}</h1>
+                  <p class="text-[1.1rem] w-[28.5rem] leading-relaxed">
+                    {{ item.desc ? item.desc : 'none yet' }}
+                  </p>
+                  <span class="flex gap-2">
+                    <span v-for="(stack, stackIndex) in item.stacks" :key="stackIndex">
+                      <img :src="Object.values(stack).join(',')" alt="stack-log" class="w-[1.5rem]" />
+                    </span>
+                  </span>
+                </div>
+                <a class="text-[1.25rem] underline absolute top-[28rem]" :href="item.link" target="_"
+                  >site</a
+                >
+              </div>
+            </v-sheet>
+          </v-carousel-item>
+        </v-carousel>
+      </div>
     </div>
   </v-container>
 </template>

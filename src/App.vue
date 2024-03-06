@@ -2,63 +2,70 @@
 import LinkedIn from './assets/linkedin.png'
 import { RouterLink, RouterView } from 'vue-router'
 import { ref } from 'vue'
+import Portfolio from '@/assets/portfolioimg.png'
+
 
 const isClicked = ref<string>('Home')
 const clickEfx = (option: string) => {
   isClicked.value = option
 }
+
+
 </script>
 
 <template>
-  <v-app class="p-0 m-0 border-box w-full min-h-screen font-manrope">
+  <v-app class="p-0 m-0 border-box w-full min-h-screen font-manrope overflow-y-auto" >
     <v-app-bar
       scroll-behavior="elevate"
       scroll-threshold="2"
-      class="border-b d-flex border-[#123b8a] px-[6.8rem]"
+      class="border-b d-flex border-[#123b8a] "
     >
-      <!-- <h1 >Syeow</-app-bar-title> -->
-      <div class="flex gap-[6.25rem] children:font-medium uppercase">
-        <div class="text-[#123B8A] d-flex" @click="clickEfx('Home')">
-          <v-icon color="" icon="mdi-home-outline" size="small"></v-icon>
-          <router-link
-            to="/"
-            class="text-[1.25rem]"
-            :class="isClicked === 'Home' ? 'text-[#123b8a]' : 'text-[#272727]'"
-          >
-            Home
-          </router-link>
+      <div class="flex items-center w-full  justify-between mx-[7.8rem] mobile:mx-4">
+        <div class="flex items-center gap-[3.25rem] children:font-medium uppercase ">
+          <div class="text-[#123B8A] d-flex" @click="clickEfx('Home')">
+            <v-icon color="#905c5a" icon="mdi-home-outline" size="small"></v-icon>
+            <router-link
+              to="/"
+              class="text-[1.25rem] mobile:text-[1rem]"
+              :class="isClicked === 'Home' ? 'text-[#905c5a]' : 'text-[#272727]'"
+            >
+              Home
+            </router-link>
+          </div>
+          <div class="text-[#272727] hover:text-[#123B8A]" @click="clickEfx('About')">
+            <router-link
+              class="text-[1.25rem] mobile:text-[1rem]"
+              :class="isClicked === 'About' ? 'text-[#905c5a]' : ''"
+              to="/about"
+            >
+              About
+            </router-link>
+          </div>
+          <div class="text-[#272727] hover:text-[#123B8A]" @click="clickEfx('Resume')">
+            <router-link
+              class="text-[1.25rem] mobile:text-[1rem]"
+              :class="isClicked === 'Resume' ? 'text-[#905c5a]' : ''"
+              to="/resume"
+              >Resume</router-link
+            >
+          </div>
         </div>
-        <div class="text-[#272727] hover:text-[#123B8A]" @click="clickEfx('About')">
-          <router-link
-            class="text-[1.25rem]"
-            :class="isClicked === 'About' ? 'text-[#123b8a]' : ''"
-            to="/about"
-          >
-            About
-          </router-link>
-        </div>
-        <div class="text-[#272727] hover:text-[#123B8A]" @click="clickEfx('Resume')">
-          <router-link
-            class="text-[1.25rem]"
-            :class="isClicked === 'Resume' ? 'text-[#123b8a]' : ''"
-            to="/resume"
-            >Resume</router-link
-          >
-        </div>
+        <!-- <v-spacer></v-spacer> -->
+        <img :src="Portfolio" alt="portfolio-image" class="w-[2.5rem] " />
       </div>
     </v-app-bar>
-    <v-main class="mx-[6.8rem] my-[6.25rem]">
-      <v-fade-transition>
+    <v-main class="mx-[6.8rem]  mt-[3.5rem] mb-[6.25rem] mobile:mx-4  border"  >
+      <v-fade-transition> 
         <RouterView />
       </v-fade-transition>
     </v-main>
-    <footer class="bg-[#CFD8EA] w-full h-[21rem] px-[6.8rem]  py-[2.5rem] flex items-center border-2">
-      <div class="flex  gap-10 w-full justify-between ">
+    <footer class="bg-[#CFD8EA] w-full h-[21rem] px-[6.8rem]  py-[2.5rem] flex items-center  mobile:px-4 " v-once>
+      <div class="flex  gap-10 w-full justify-between mobile:flex-col">
         <div class="flex flex-col gap-y-[2.5rem] text-[2rem] text-sm-h5">
           <h3 class="text-[#123b8a] font-bold ">Let's chat!</h3>
           <p class="text-[#272727]">owusilasyp00@gmail.com</p>
         </div>
-        <div class="items-end flex">
+        <div class="items-end flex mobile:flex-col">
           <div class="items-center text-[1.75rem] text-sm-h5  flex gap-[1.75rem] flex-sm-column  ">
             <p>You can follow me on</p>
             <a  href="https://www.linkedin.com/in/silas-owu-2475301b0/"
