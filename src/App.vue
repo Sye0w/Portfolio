@@ -1,16 +1,15 @@
 <script setup lang="ts">
-import LinkedIn from './assets/linkedin.png'
-import { RouterLink, RouterView } from 'vue-router'
-import { ref } from 'vue'
-import Portfolio from '@/assets/portfolioimg.png'
+  import LinkedIn from './assets/linkedin.png'
+  import { RouterLink, RouterView } from 'vue-router'
+  import { ref } from 'vue'
+  import Portfolio from '@/assets/portfolioimg.png'
 
 
-const isClicked = ref<string>('Home')
-const clickEfx = (option: string) => {
-  isClicked.value = option
-}
-
-
+  const isClicked = ref<string>(localStorage.getItem('Home') ||'Home')
+  const clickEfx = (option: string) => {
+    isClicked.value = option
+    localStorage.setItem('Home',isClicked.value)
+  }
 </script>
 
 <template>
@@ -54,19 +53,19 @@ const clickEfx = (option: string) => {
         <img :src="Portfolio" alt="portfolio-image" class="w-[2.5rem] " />
       </div>
     </v-app-bar>
-    <v-main class="mx-[6.8rem]  mt-[3.5rem] mb-[6.25rem] mobile:mx-4  border"  >
+    <v-main class="mx-[6.8rem]  mt-[3.5rem] mb-[6.25rem] mobile:mx-4"  >
       <v-fade-transition> 
         <RouterView />
       </v-fade-transition>
     </v-main>
     <footer class="bg-[#CFD8EA] w-full h-[21rem] px-[6.8rem]  py-[2.5rem] flex items-center  mobile:px-4 " v-once>
       <div class="flex  gap-10 w-full justify-between mobile:flex-col">
-        <div class="flex flex-col gap-y-[2.5rem] text-[2rem] text-sm-h5">
+        <div class="flex flex-col gap-y-[2.5rem] mobile:gap-y-[1rem] text-[2rem] text-sm-h5 mobile:text-[1.25rem]">
           <h3 class="text-[#123b8a] font-bold ">Let's chat!</h3>
           <p class="text-[#272727]">owusilasyp00@gmail.com</p>
         </div>
         <div class="items-end flex mobile:flex-col">
-          <div class="items-center text-[1.75rem] text-sm-h5  flex gap-[1.75rem] flex-sm-column  ">
+          <div class="items-center text-[1.75rem] mobile:text-[1rem]  mobile:flex-col text-sm-h5  flex gap-[1.75rem] flex-sm-column  ">
             <p>You can follow me on</p>
             <a  href="https://www.linkedin.com/in/silas-owu-2475301b0/"
             target="_" class="flex items-center gap-1 w-full md:ml-auto">

@@ -105,31 +105,6 @@ const data: Project[] = [
 
 <template>
   <v-container class="flex flex-col gap-y-4 pa-0 ga-sm-10 overflow-y-auto mobile:w-full" fluid >
-    <!-- <div class="flex items-center justify-between d-sm-none d-md-flex ga-sm-10">
-      <v-col class="text-[#123b8a] flex flex-col gap-y-[1.5rem] pa-0 ">
-        <div class="flex items-center gap-2 text-[2.5rem] font-semibold">
-          <h2>Hi there! I am</h2> <span class="text-">Silas Owu</span>
-          <img :src="WaveHand" alt="wave" class="w-[3.375rem] h-[3.375rem]" />
-        </div>
-        <div>
-          <p class="font-medium text-[1.5rem]">Frontend Developer</p>
-          <div class="flex gap-1">
-            <!-- <img :src="Figma" alt="figma-logo" class="w-[1.7rem]"/>  
-            <img :src="Vue" alt="vue-logo" class="w-[1.5rem]" />
-            <img :src="React" alt="react-logo" class="w-[1.5rem]" />
-            <img :src="Angular" alt="ang-logo" class="w-[1.5rem]" />
-            <img :src="Vuetify" alt="vuetify-logo" class="w-[1.5rem]" />
-            <img :src="Antd" alt="antd-logo" class="w-[1.5rem]" />
-            <img :src="Tailwind" alt="tailwind-logo" class="w-[1.5rem]" />
-            <img :src="Git" alt="git-logo" class="w-[1.5rem]" />
-            <img :src="Github" alt="github-logo" class="w-[1.5rem]" />
-          </div>
-        </div>
-      </v-col>
-      <img :src="Portfolio" alt="portfolio-image" class="w-[26.8125rem] " />
-    </div> -->
-    
-    <!-- md & sm screens -->
     <div class="flex items-center justify-between d-md  d-sm-flex flex-sm-column ga-sm-10  mobile:flex-col mobile:gap-y-8">
       <v-col class=" flex flex-col gap-y-[0.6125rem] pa-0 ">
         <div class=" flex items-center gap-2 text-[2.5rem] mobile:text-[1.5rem] font-semibold ">
@@ -140,7 +115,7 @@ const data: Project[] = [
             <img :src="WaveHand" alt="wave" class="w-[3.375rem] h-[3.375rem] mobile:w-[2rem] mobile:h-[2rem]" />
         </div>
         <div>
-          <p class="font-medium text-[1.5rem] text-[#123b8a]">Frontend Developer</p>
+          <p class="font-medium text-[1.5rem] text-[#123b8a] mobile:text-[1.125rem]">Frontend Developer</p>
           <div class="flex gap-1">
             <!-- <img :src="Figma" alt="figma-logo" class="w-[1.7rem]"/>  -->
             <img :src="Vue" alt="vue-logo" class="w-[1.5rem]" />
@@ -158,26 +133,27 @@ const data: Project[] = [
     </div>
     
     <div class="flex flex-col gap-[8rem]" >
-      <div class="flex gap-1 text-[1.5rem] text-sm-h5 ga-sm-2 d-md">
-        <h4>Find me on
-        <a
-          class="text-[#123b8a] underline"
-          href="https://www.linkedin.com/in/silas-owu-2475301b0/"
-          target="_"
-        >
-          LinkedIn
-        </a>
-        and check out my works below <span><img :src="Pointer" alt="pointer"/></span>
+      <div class="flex gap-1 text-[1.5rem] mobile:text-[1.125rem] text-sm-h5 ga-sm-2 d-md">
+        <h4>
+          Find me on
+          <a
+            class="text-[#123b8a] underline"
+            href="https://www.linkedin.com/in/silas-owu-2475301b0/"
+            target="_"
+          >
+            LinkedIn
+          </a>
+          and check out my works below 
       </h4>
+        <span><img :src="Pointer" alt="pointer"/></span>
       </div>
       <div>
-        <h3 class="text-h5">Featured work and stacks:</h3>
+        <h3 class="text-h5 mobile:text-[1.125rem]">Featured work and stacks:</h3>
         <v-carousel cycle show-arrows="hover" height="600" >
-          <v-carousel-item v-for="(item, index) in data" :key="index">
+          <v-carousel-item v-for="(item, index) in data" :key="index" class="w-full">
             <v-sheet
               height="100%"
               color="#a0b4dc"
-              class=""
               :style="{
                 backgroundImage: `url(${item.image})`,
                 backgroundRepeat: 'no-repeat',
@@ -190,7 +166,7 @@ const data: Project[] = [
               >
                 <div class="flex flex-col gap-y-2">
                   <h1 class="text-[2rem] text-[#fff] font-bold">{{ item.title }}</h1>
-                  <p class="text-[1.1rem] w-[28.5rem] leading-relaxed">
+                  <p class="text-[1.1rem] w-[28.5rem] leading-relaxed mobile:w-[18rem]">
                     {{ item.desc ? item.desc : 'none yet' }}
                   </p>
                   <span class="flex gap-2">
