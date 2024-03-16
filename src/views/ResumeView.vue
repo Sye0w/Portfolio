@@ -3,8 +3,8 @@
 <template>
   <v-container fluid class="flex flex-col gap-y-[4rem]">
     <div class="flex tablet:flex-row justify-between mobile:gap-8 mobile:flex-col ">
-      <div class="text-[#905c5a]  align-self-start">
-        <h2 class="text-[2rem] font-bold ">Silas Owu</h2>
+      <div class="text-[#123b8a]  align-self-start font-playfair font-bold">
+        <h2 class="text-[2.125rem] font-bold ">Silas Owu</h2>
         <span>Frontend Developer</span>
       </div>
       <div class="flex flex-col gap-y-[1rem] ">
@@ -49,7 +49,7 @@
         <ul class="list-disc">
           <li>Acquired best practices in programming for a readable and maintainable codebase</li>
           <li>Worked on the responsiveness of an internal project</li>
-          <li>Developed frontend projects and applied scrum methodology</li>
+          <li>Developed frontend projects and applied agile methodology</li>
           <li>Offered assistance to teammates with their code</li>
         </ul>
       </div>
@@ -87,6 +87,7 @@
         <li>Debugging</li>
         <li>Continuous Learning</li>
         <li>Communication and Teamwork</li>
+        <li>Diligent and open minded</li>
       </ul>
     </div>
     <div class="flex flex-col gap-y-6">

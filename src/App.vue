@@ -13,7 +13,7 @@
 </script>
 
 <template>
-  <v-app class="p-0 m-0 border-box w-full min-h-screen font-manrope overflow-y-auto" >
+  <v-app class="p-0 m-0 border-box w-full min-h-screen font-chivo overflow-y-auto" >
     <v-app-bar
       scroll-behavior="elevate"
       scroll-threshold="2"
@@ -22,19 +22,19 @@
       <div class="flex items-center w-full  justify-between mx-[7.8rem] mobile:mx-4">
         <div class="flex items-center gap-[3.25rem] children:font-medium uppercase ">
           <div class="text-[#123B8A] d-flex" @click="clickEfx('Home')">
-            <v-icon color="#905c5a" icon="mdi-home-outline" size="small"></v-icon>
+            <v-icon color="#123b8a" icon="mdi-home-outline" size="small"></v-icon>
             <router-link
               to="/"
-              class="text-[1.25rem] mobile:text-[1rem]"
-              :class="isClicked === 'Home' ? 'text-[#905c5a]' : 'text-[#272727]'"
+              class="text-[1.125rem] mobile:text-[1rem]"
+              :class="isClicked === 'Home' ? 'text-[#123b8a]' : 'text-[#000]'"
             >
               Home
             </router-link>
           </div>
           <div class="text-[#272727] hover:text-[#123B8A]" @click="clickEfx('About')">
             <router-link
-              class="text-[1.25rem] mobile:text-[1rem]"
-              :class="isClicked === 'About' ? 'text-[#905c5a]' : ''"
+              class="text-[1.125rem] mobile:text-[1rem]"
+              :class="isClicked === 'About' ? 'text-[#123b8a]' : ''"
               to="/about"
             >
               About
@@ -42,14 +42,13 @@
           </div>
           <div class="text-[#272727] hover:text-[#123B8A]" @click="clickEfx('Resume')">
             <router-link
-              class="text-[1.25rem] mobile:text-[1rem]"
-              :class="isClicked === 'Resume' ? 'text-[#905c5a]' : ''"
+              class="text-[1.125rem] mobile:text-[1rem]"
+              :class="isClicked === 'Resume' ? 'text-[#123b8a]' : ''"
               to="/resume"
               >Resume</router-link
             >
           </div>
         </div>
-        <!-- <v-spacer></v-spacer> -->
         <img :src="Portfolio" alt="portfolio-image" class="w-[2.5rem] " />
       </div>
     </v-app-bar>

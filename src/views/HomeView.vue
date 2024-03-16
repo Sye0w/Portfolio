@@ -24,15 +24,13 @@ import Git from '@/assets/git.png'
 import Portfolio from '@/assets/portfolioimg.png'
 import Pointer from '@/assets/pointer.png'
 
-import { defineProps,ref } from 'vue'
+
 
 interface Project {
   title: string
   desc: string
   link: string
-  stacks: {
-    [key: string]: string
-  }[]
+  stacks: { [key: string]: string }[]
   image: string
 }
 
@@ -105,17 +103,23 @@ const data: Project[] = [
 
 <template>
   <v-container class="flex flex-col gap-y-4 pa-0 ga-sm-10 overflow-y-auto mobile:w-full" fluid >
-    <div class="flex items-center justify-between d-md  d-sm-flex flex-sm-column ga-sm-10  mobile:flex-col mobile:gap-y-8">
-      <v-col class=" flex flex-col gap-y-[0.6125rem] pa-0 ">
-        <div class=" flex items-center gap-2 text-[2.5rem] mobile:text-[1.5rem] font-semibold ">
-          <h2 class="text-[#123b8a]">Hi there! I am</h2> 
-          <span class="text-[#905c5a]">
-             Silas Owu
-            </span>
-            <img :src="WaveHand" alt="wave" class="w-[3.375rem] h-[3.375rem] mobile:w-[2rem] mobile:h-[2rem]" />
+    <section class="flex items-center justify-between d-md  d-sm-flex flex-sm-column ga-sm-10  mobile:flex-col mobile:gap-y-10">
+      <v-col class=" flex flex-col gap-y-[0.6325rem] pa-0 ">
+        <div class=" flex items-center mobile:text-[1.5rem] font-semibold ">
+          <img :src="WaveHand" alt="wave" class="w-[2rem] h-[2rem]" />
+          <h2 class="text-[2rem] font-playfair">Hi!</h2>           
         </div>
-        <div>
-          <p class="font-medium text-[1.5rem] text-[#123b8a] mobile:text-[1.125rem]">Frontend Developer</p>
+        <div class="text-[2.5rem] mobile:text-[2rem]">
+          <span class="font-black font-playfair"> I'm  Silas Owu</span>
+          <p class="font-playfair text-[#123b8a] font-black">Frontend Developer</p>
+          <p class=" font-regular w-[30rem] text-[1rem] mobile:w-full">
+            Excited to show you what what I've been working on! 
+            I'm on a self-paced journey to become a skilled software engineer,
+            focusing on front-end development.Here, you'll see some of the projects 
+            I've built while learning and honing my skills. Explore
+            my projects built with the stacks below!<br>  I'd love to hear your feedback.
+
+          </p>
           <div class="flex gap-1">
             <!-- <img :src="Figma" alt="figma-logo" class="w-[1.7rem]"/>  -->
             <img :src="Vue" alt="vue-logo" class="w-[1.5rem]" />
@@ -129,10 +133,23 @@ const data: Project[] = [
           </div>
         </div>
       </v-col>
-      <img :src="Portfolio" alt="portfolio-image" class="w-[26.8125rem] relative left-[17rem] tablet:static mobile:static mobile:w-[17rem]" />
-    </div>
-    
-    <div class="flex flex-col gap-[8rem]" >
+      <img :src="Portfolio" alt="portfolio-image" class="w-[26.8125rem] mobile:w-[20rem] relative left-[8rem] tablet:static mobile:static " />
+    </section>
+    <section class="w-full h-[7rem] bg-gradient-to-r from-[#0A234F] to-[#E9F0FF]  flex items-center justify-center gap-[8rem] mobile:gap-6 rounded-tr-4 rounded-br-4">
+      <div class="text-white flex flex-col items-center justify-center ">
+        <h3>-1</h3>
+        <p class="text-[0.635rem] font-thin">Years of Experience</p>
+      </div>
+      <div class="text-white flex flex-col items-center justify-center ">
+        <h3>Not yet</h3>
+        <p class="text-[0.635rem] font-thin">Happy Clients</p>
+      </div>
+      <div class="text-white flex flex-col items-center justify-center ">
+        <h3>13+</h3>
+        <p class="text-[0.635rem] font-thin">Projects done</p>
+      </div>
+    </section>
+    <section class="flex flex-col gap-[8rem]" >
       <div class="flex gap-1 text-[1.5rem] mobile:text-[1.125rem] text-sm-h5 ga-sm-2 d-md">
         <h4>
           Find me on
@@ -145,12 +162,12 @@ const data: Project[] = [
           </a>
           and check out my works below 
       </h4>
-        <span><img :src="Pointer" alt="pointer"/></span>
+        <!-- <span><img :src="Pointer" alt="pointer"/></span> -->
       </div>
-      <div>
+      <div >
         <h3 class="text-h5 mobile:text-[1.125rem]">Featured work and stacks:</h3>
         <v-carousel cycle show-arrows="hover" height="600" >
-          <v-carousel-item v-for="(item, index) in data" :key="index" class="w-full">
+          <v-carousel-item v-for="(item, index) in data" :key="index" class="overflow-x-hidden">
             <v-sheet
               height="100%"
               color="#a0b4dc"
@@ -183,6 +200,6 @@ const data: Project[] = [
           </v-carousel-item>
         </v-carousel>
       </div>
-    </div>
+    </section>
   </v-container>
 </template>

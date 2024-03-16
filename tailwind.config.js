@@ -12,7 +12,9 @@ export default {
       'laptop': {'min':'900px'}
     },
     fontFamily: {
-      'manrope':['Manrope','sans-serif']
+      'manrope':['Manrope','sans-serif'],
+      'playfair':['Playfair Display','serif'],
+      'chivo': ['Chivo','sans-serif']
     },
     colors:{},
     extend: {},
