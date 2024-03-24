@@ -102,16 +102,16 @@ const data: Project[] = [
 </script>
 
 <template>
-  <v-container class="flex flex-col gap-y-4 pa-0 ga-sm-10 overflow-y-auto mobile:w-full" fluid >
+  <v-container class="flex flex-col gap-y-2 pa-0 ga-sm-10 overflow-y-auto mobile:w-full mobile:gap-y-6" fluid >
     <section class="flex items-center justify-between d-md  d-sm-flex flex-sm-column ga-sm-10  mobile:flex-col mobile:gap-y-10">
-      <v-col class=" flex flex-col gap-y-[0.6325rem] pa-0 ">
+      <v-col class=" flex flex-col gap-y-[0.6325rem] pa-0 mobile:gap-y-[0.75rem]">
         <div class=" flex items-center mobile:text-[1.5rem] font-semibold ">
           <img :src="WaveHand" alt="wave" class="w-[2rem] h-[2rem]" />
           <h2 class="text-[2rem] font-playfair">Hi!</h2>           
         </div>
-        <div class="text-[2.5rem] mobile:text-[2rem]">
-          <span class="font-black font-playfair"> I'm  Silas Owu</span>
-          <p class="font-playfair text-[#123b8a] font-black">Frontend Developer</p>
+        <div class="text-[2.5rem] mobile:text-[2rem] mobile:flex mobile:flex-col mobile:gap-y-2">
+          <h1 class="font-black font-playfair"> I'm  Silas Owu</h1>
+          <h3 class="font-playfair text-[#123b8a] font-black">Frontend Developer</h3>
           <p class=" font-regular w-[30rem] text-[1rem] mobile:w-full">
             Excited to show you what what I've been working on! 
             I'm on a self-paced journey to become a skilled software engineer,
@@ -120,24 +120,27 @@ const data: Project[] = [
             my projects built with the stacks below!<br>  I'd love to hear your feedback.
 
           </p>
-          <div class="flex gap-1">
-            <!-- <img :src="Figma" alt="figma-logo" class="w-[1.7rem]"/>  -->
-            <img :src="Vue" alt="vue-logo" class="w-[1.5rem]" />
-            <img :src="React" alt="react-logo" class="w-[1.5rem]" />
-            <img :src="Angular" alt="ang-logo" class="w-[1.5rem]" />
-            <img :src="Vuetify" alt="vuetify-logo" class="w-[1.5rem]" />
-            <img :src="Antd" alt="antd-logo" class="w-[1.5rem]" />
-            <img :src="Tailwind" alt="tailwind-logo" class="w-[1.5rem]" />
-            <img :src="Git" alt="git-logo" class="w-[1.5rem]" />
-            <img :src="Github" alt="github-logo" class="w-[1.5rem]" />
+
+          <div class="flex gap-1 p-2 border border-[#E9F0FF] justify-between w-[18.5rem] rounded-[0.6375rem]">
+            <div class="w-2 h-2 rounded-full absolute top-[29.625rem] animate-ping left-[24.5rem] mobile:left-[18.5rem] mobile:top-[32.75rem] z-index bg-[#E9F0FF] opacity-75"></div>
+            <div class="w-2 h-2 rounded-full absolute top-[29.625rem] left-[24.5rem] mobile:left-[18.5rem] mobile:top-[32.75rem] z-index bg-[#E9F0FF]"></div>
+            <img :src="TS" alt="typescript-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce"/> 
+            <img :src="Vue" alt="vue-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-spin " />
+            <img :src="React" alt="react-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce" />
+            <img :src="Angular" alt="ang-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-spin" />
+            <img :src="Vuetify" alt="vuetify-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-spin" />
+            <img :src="Antd" alt="antd-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce" />
+            <img :src="Tailwind" alt="tailwind-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce" />
+            <img :src="Git" alt="git-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce" />
+            <img :src="Github" alt="github-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce" />
           </div>
         </div>
       </v-col>
-      <img :src="Portfolio" alt="portfolio-image" class="w-[26.8125rem] mobile:w-[20rem] relative left-[8rem] tablet:static mobile:static " />
+      <img :src="Portfolio" alt="portfolio-image" class="w-[27.8125rem] mobile:w-[20rem] relative -top-[7rem] left-[13.5rem] tablet:static mobile:static " />
     </section>
     <section class="w-full h-[7rem] bg-gradient-to-r from-[#0A234F] to-[#E9F0FF]  flex items-center justify-center gap-[8rem] mobile:gap-6 rounded-tr-4 rounded-br-4">
       <div class="text-white flex flex-col items-center justify-center ">
-        <h3>-1</h3>
+        <h3>0.8</h3>
         <p class="text-[0.635rem] font-thin">Years of Experience</p>
       </div>
       <div class="text-white flex flex-col items-center justify-center ">
@@ -145,7 +148,7 @@ const data: Project[] = [
         <p class="text-[0.635rem] font-thin">Happy Clients</p>
       </div>
       <div class="text-white flex flex-col items-center justify-center ">
-        <h3>13+</h3>
+        <h3>10+</h3>
         <p class="text-[0.635rem] font-thin">Projects done</p>
       </div>
     </section>
@@ -164,8 +167,8 @@ const data: Project[] = [
       </h4>
         <!-- <span><img :src="Pointer" alt="pointer"/></span> -->
       </div>
-      <div >
-        <h3 class="text-h5 mobile:text-[1.125rem]">Featured work and stacks:</h3>
+      <div class="flex flex-col gap-y-2">
+        <h3 class="text-h5 mobile:text-[1.125rem] text-[#123b8a] border-b-2 pb-3 border-[#123b8a] w-[28rem] mobile:w-full">Some prominent projects I built for myself</h3>
         <v-carousel cycle show-arrows="hover" height="600" >
           <v-carousel-item v-for="(item, index) in data" :key="index" class="overflow-x-hidden">
             <v-sheet
@@ -188,7 +191,7 @@ const data: Project[] = [
                   </p>
                   <span class="flex gap-2">
                     <span v-for="(stack, stackIndex) in item.stacks" :key="stackIndex">
-                      <img :src="Object.values(stack).join(',')" alt="stack-log" class="w-[1.5rem]" />
+                      <img :src="Object.values(stack).join(',')" alt="stack-log" class="w-[1.25rem]" />
                     </span>
                   </span>
                 </div>

@@ -22,7 +22,7 @@
       <div class="flex items-center w-full  justify-between mx-[7.8rem] mobile:mx-4">
         <div class="flex items-center gap-[3.25rem] children:font-medium uppercase ">
           <div class="text-[#123B8A] d-flex" @click="clickEfx('Home')">
-            <v-icon color="#123b8a" icon="mdi-home-outline" size="small"></v-icon>
+            <v-icon color="#123b8a" icon="mdi-home-outline" size="small" class="animate-wiggle"></v-icon>
             <router-link
               to="/"
               class="text-[1.125rem] mobile:text-[1rem]"
@@ -61,7 +61,7 @@
       <div class="flex  gap-10 w-full justify-between mobile:flex-col">
         <div class="flex flex-col gap-y-[2.5rem] mobile:gap-y-[1rem] text-[2rem] text-sm-h5 mobile:text-[1.25rem]">
           <h3 class="text-[#123b8a] font-bold ">Let's chat!</h3>
-          <p class="text-[#272727]">owusilasyp00@gmail.com</p>
+          <a href="mailto:owusilasyp00@gmail.com" class="text-[#272727] cursor-pointer">owusilasyp00@gmail.com</a>
         </div>
         <div class="items-end flex mobile:flex-col">
           <div class="items-center text-[1.75rem] mobile:text-[1rem]  mobile:flex-col text-sm-h5  flex gap-[1.75rem] flex-sm-column  ">

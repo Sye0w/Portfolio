@@ -107,7 +107,7 @@
       </div>
       <ul class="pl-4">
         <li class="list-disc">Create an Advanced Web App with React and Redux Skill Path</li>
-        
+        <li>AWS Certified Cloud practitioner</li>
       </ul>
     </div>
     <!-- <div>
