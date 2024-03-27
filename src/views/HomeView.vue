@@ -7,6 +7,7 @@ import EntertainBg from '@/assets/entertaindesk.jpg'
 import ProductBg  from '@/assets/ProductBg.jpg'
 import PlanetBg   from '@/assets/planetdesk.jpg'
 import EcommerceBg from '@/assets/ecommercedesk.jpg'
+import TodoBg from '@/assets/todoappdesk.jpg'
 import RestBg      from '@/assets/restdesk.jpg'
 import DevjobsBg from '@/assets/devjobsview.jpg'
 import GalleriaBg from '@/assets/galleriadesk.jpg'
@@ -53,15 +54,22 @@ const data: Project[] = [
     title: 'Rest Country API',
     desc: 'A platform displaying rest country API data for countries and other related info.',
     link: 'https://rest-countries-api-react-tsx.vercel.app',
-    stacks: [{ tailwind: Tailwind }, { js: JS }, { html: Html }, { vite: Vite }],
+    stacks: [{ tailwind: Tailwind }, {react: React}, { ts: TS }, { html: Html }, { vite: Vite }],
     image: RestBg
   },
   {
     title: 'Ecommerce product page',
     desc: 'An ecommerce platform for a single product',
     link: 'https://ecommerce-product-page-gray-pi.vercel.app',
-    stacks: [{ tailwind: Tailwind }, { js: JS }, { html: Html }, { vite: Vite },{ vue: Vue}],
+    stacks: [{ tailwind: Tailwind }, { ts: TS }, { html: Html }, { vite: Vite },{ vue: Vue}],
     image: EcommerceBg
+  },
+  {
+    title: 'Todo App',
+    desc: 'A classic todo app with a few twists! This app includes a dark/light theme toggle and drag & drop reordering for anyone wanting an extra taste',
+    link: 'https://todo-app-kappa-three-35.vercel.app',
+    stacks: [{ tailwind: Tailwind }, {ang: Angular }, { html: Html }],
+    image: TodoBg
   },
   {
     title: 'Planets fact site',
@@ -73,7 +81,8 @@ const data: Project[] = [
   {
     title: 'GitHub user search app',
     desc: 'Github User finder app is used to pull profile data and display it from GitHub users API',
-    link: 'https://github.com/Sye-5pace/Github_Devfinder_App',
+    link: 'https://github-devfinder-app-1sa2-fmg7mainj-sye-5pace.vercel.app',
+    // link: 'https://github.com/Sye-5pace/Github_Devfinder_App',
     stacks: [{ tailwind: Tailwind }, { ts: TS }, { html: Html }, { vite: Vite },{react: React}],
     image: GithubUserBg
   },
@@ -95,7 +104,7 @@ const data: Project[] = [
     title: 'Product feedback app',
     desc: 'A platform that user share feedbacks about products.',
     link: 'https://product-feedback-seven.vercel.app/',
-    stacks: [{ tailwind: Tailwind }, { ts: TS }, { vue: Vue }, { html: Html }, { vite: Vite }],
+    stacks: [{ tailwind: Tailwind }, { ts: TS }, { vue: Vue }, { vuetify: Vuetify }, { html: Html }, { vite: Vite }],
     image: ProductBg
   }
 ]
@@ -168,7 +177,7 @@ const data: Project[] = [
         <!-- <span><img :src="Pointer" alt="pointer"/></span> -->
       </div>
       <div class="flex flex-col gap-y-2">
-        <h3 class="text-h5 mobile:text-[1.125rem] text-[#123b8a] border-b-2 pb-3 border-[#123b8a] w-[28rem] mobile:w-full">Some prominent projects I built for myself</h3>
+        <h3 class="text-h5 mobile:text-[1.125rem] text-[#123b8a] border-b-2 pb-2 border-[#123b8a] w-[28rem] mobile:w-full">Some prominent projects I built for myself</h3>
         <v-carousel cycle show-arrows="hover" height="600" >
           <v-carousel-item v-for="(item, index) in data" :key="index" class="overflow-x-hidden">
             <v-sheet

@@ -7,7 +7,7 @@
       A proficient frontend developer with an imaginative 
       passion for frontend developments. As a frontend developer,
       I have cultivated diverse skills set and keen eye for Software development,
-      UI/UX design, Machine learning and Cloud computing
+      UI/UX design, Machine learning and Cloud computing. For more information find me on LinkedIn
     </p>
     <p>
       I'm always open to new opportunities, collaborations, and tech talks.

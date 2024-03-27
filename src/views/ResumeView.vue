@@ -80,8 +80,8 @@
         <li>Responsive Design</li>
         <li>VS Code</li>
         <li>Figma</li>
-        <li>Intermediate level in ,JS/TS Frontend Frameworks(React,Vue,Angular)</li>
-        <li>Beginner level in Component Libraries(Vuetify,Antd)</li>
+        <li>Intermediate level in JS/TS and Frontend Frameworks(React,Vue)</li>
+        <li>Beginner level in Component Libraries(Vuetify,Antd) and Angular</li>
         <li>Intermediate Tailwindcss/HTML</li>
         <li>Integrate APIs</li>
         <li>Debugging</li>
@@ -107,7 +107,7 @@
       </div>
       <ul class="pl-4">
         <li class="list-disc">Create an Advanced Web App with React and Redux Skill Path</li>
-        <li>AWS Certified Cloud practitioner</li>
+        <li class="list-disc">AWS Certified Cloud practitioner</li>
       </ul>
     </div>
     <!-- <div>
