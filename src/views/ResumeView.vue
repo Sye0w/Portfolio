@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import Github from '@/assets/github.png'  
+  import LinkedIn from '@/assets/linkedin.png'
+</script>
 
 <template>
   <v-container fluid class="flex flex-col gap-y-[4rem]">
@@ -6,12 +9,22 @@
       <div class="text-[#123b8a]  align-self-start font-playfair font-bold">
         <h2 class="text-[2.125rem] font-bold ">Silas Owu</h2>
         <span>Frontend Developer</span>
+        <div class="flex gap-2">
+          <a  href="https://www.linkedin.com/in/silas-owu-2475301b0/"
+              target="_" >
+              <img :src="LinkedIn" alt="behance-logo" class="w-[1.4375rem] h-[1.4375rem]" /> 
+          </a>
+          <a  href="https://github.com/Sye-5pace"
+              target="_" >
+              <img :src="Github" alt="Github-logo" class="w-[1.4375rem] h-[1.4375rem]" /> 
+          </a>
+        </div>
       </div>
       <div class="flex flex-col gap-y-[1rem] ">
         <div class="flex flex-col gap-y-3">
           <div class="flex gap-3 items-center">
             <v-icon icon="mdi-email-outline" color="#123b8a"></v-icon>
-            <p class="text-[#272727] text-[1.5rem] underline">owusilasyp00@gmail.com</p>
+            <a class="text-[#272727] text-[1.5rem] underline" href="mailto:owusilasyp00@gmail.com">owusilasyp00@gmail.com</a>
           </div>
           <div class="flex gap-3 items-center">
             <v-icon icon="mdi-phone-outline" color="#123b8a"></v-icon>
@@ -77,7 +90,7 @@
       </div>
       <ul class="list-disc pl-4">
         <li>Version control with Git, and Github</li>
-        <li>Responsive Design</li>
+        <li>Responsive Design & PWA</li>
         <li>VS Code</li>
         <li>Figma</li>
         <li>Intermediate level in JS/TS and Frontend Frameworks(React,Vue)</li>

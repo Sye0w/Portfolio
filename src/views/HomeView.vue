@@ -23,6 +23,8 @@ import TS from '@/assets/typescript.png'
 import Github from '@/assets/github.png'
 import Git from '@/assets/git.png'
 import Portfolio from '@/assets/portfolioimg.png'
+import Pwa from '@/assets/pwa.png'
+import PwaLogo from '@/assets/pwa-sticker.png'
 import Pointer from '@/assets/pointer.png'
 
 
@@ -68,7 +70,7 @@ const data: Project[] = [
     title: 'Todo App',
     desc: 'A classic todo app with a few twists! This app includes a dark/light theme toggle and drag & drop reordering for anyone wanting an extra taste',
     link: 'https://todo-app-kappa-three-35.vercel.app',
-    stacks: [{ tailwind: Tailwind }, {ang: Angular }, { html: Html }],
+    stacks: [{ tailwind: Tailwind }, {ang: Angular }, { html: Html },{pwa: Pwa}],
     image: TodoBg
   },
   {
@@ -130,7 +132,7 @@ const data: Project[] = [
 
           </p>
 
-          <div class="flex gap-1 p-2 border border-[#E9F0FF] justify-between w-[18.5rem] rounded-[0.6375rem]">
+          <div class="flex gap-1 p-2 border border-[#E9F0FF] justify-between w-[20rem] rounded-[0.6375rem]">
             <div class="w-2 h-2 rounded-full absolute top-[29.625rem] animate-ping left-[24.5rem] mobile:left-[18.5rem] mobile:top-[32.75rem] z-index bg-[#E9F0FF] opacity-75"></div>
             <div class="w-2 h-2 rounded-full absolute top-[29.625rem] left-[24.5rem] mobile:left-[18.5rem] mobile:top-[32.75rem] z-index bg-[#E9F0FF]"></div>
             <img :src="TS" alt="typescript-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce"/> 
@@ -138,7 +140,8 @@ const data: Project[] = [
             <img :src="React" alt="react-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce" />
             <img :src="Angular" alt="ang-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-spin" />
             <img :src="Vuetify" alt="vuetify-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-spin" />
-            <img :src="Antd" alt="antd-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce" />
+            <img :src="PwaLogo" alt="pwa-logo" class="w-[1.85rem] h-[1.25rem] hover:animate-spin" />
+            <!-- <img :src="Antd" alt="antd-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce" /> -->
             <img :src="Tailwind" alt="tailwind-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce" />
             <img :src="Git" alt="git-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce" />
             <img :src="Github" alt="github-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce" />
