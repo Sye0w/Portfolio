@@ -141,7 +141,7 @@ const data: Project[] = [
             <img :src="Angular" alt="ang-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-spin" />
             <img :src="Vuetify" alt="vuetify-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-spin" />
             <img :src="PwaLogo" alt="pwa-logo" class="w-[1.85rem] h-[1.25rem] hover:animate-spin" />
-            <!-- <img :src="Antd" alt="antd-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce" /> -->
+            
             <img :src="Tailwind" alt="tailwind-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce" />
             <img :src="Git" alt="git-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce" />
             <img :src="Github" alt="github-logo" class="w-[1.25rem] h-[1.25rem] hover:animate-bounce" />
@@ -152,7 +152,7 @@ const data: Project[] = [
     </section>
     <section class="w-full h-[7rem] bg-gradient-to-r from-[#0A234F] to-[#E9F0FF]  flex items-center justify-center gap-[8rem] mobile:gap-6 rounded-tr-4 rounded-br-4">
       <div class="text-white flex flex-col items-center justify-center ">
-        <h3>0.8</h3>
+        <h3>1+</h3>
         <p class="text-[0.635rem] font-thin">Years of Experience</p>
       </div>
       <div class="text-white flex flex-col items-center justify-center ">
@@ -176,8 +176,7 @@ const data: Project[] = [
             LinkedIn
           </a>
           and check out my works below 
-      </h4>
-        <!-- <span><img :src="Pointer" alt="pointer"/></span> -->
+        </h4>
       </div>
       <div class="flex flex-col gap-y-2">
         <h3 class="text-h5 mobile:text-[1.125rem] text-[#123b8a] border-b-2 pb-2 border-[#123b8a] w-[28rem] mobile:w-full">Some prominent projects I built for myself</h3>

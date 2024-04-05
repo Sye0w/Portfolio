@@ -44,9 +44,9 @@
       </div>
       <ul class="pl-4">
         <li class="text-[#272727] text-[1.25rem] list-disc">
-          A self-paced Frontend Developer with less than a year of experience yet with a function of
-          continuous learning, fuels of curiosity, and code reviews grows experiential
-          knowledge whenever I build projects.
+          Highly motivated Frontend Developer with than a year of experience.
+          I'm a fast learner, fueled by curiosity and a passion for UI/UX development through code.
+          Through continuous learning and building projects, I've gained a strong foundation in web development.
         </li>
       </ul>
     </div>
@@ -60,10 +60,18 @@
           <span >Nov 2022 - Sept 2023</span>
         </div>
         <ul class="list-disc">
-          <li>Acquired best practices in programming for a readable and maintainable codebase</li>
+          <li>Exposure on best practices in programming for a readable and maintainable codebase</li>
           <li>Worked on the responsiveness of an internal project</li>
-          <li>Developed frontend projects and applied agile methodology</li>
+          <li>Developed frontend projects</li>
           <li>Offered assistance to teammates with their code</li>
+        </ul>
+      </div>
+      <div class="pl-4">
+        <div class="flex justify-between font-medium text-[1.375rem] text-[#272727] tablet:text-[1.125rem] mobile:flex-col mobile:gap-y-2">
+          <h2 class="font-medium">Freelance UI/UX Designer </h2><span>March 2022</span>
+        </div>
+        <ul class="list-disc">
+          <li>Designed Mobile UI components of A Health mobile service with Adobe XD</li>
         </ul>
       </div>
       <div class="pl-4">
@@ -75,33 +83,29 @@
           <li>Designed Mobile UI components on an internal project with Adobe XD</li>
         </ul>
       </div>
-      <div class="pl-4">
-        <div class="flex justify-between font-medium text-[1.375rem] text-[#272727] tablet:text-[1.125rem] mobile:flex-col mobile:gap-y-2">
-          <h2 class="font-medium">Freelance UI/UX Designer </h2><span>March 2022</span>
-        </div>
-        <ul class="list-disc">
-          <li>Designed Mobile UI components of A Health mobile service with Adobe XD</li>
-        </ul>
-      </div>
     </div>
     <div class="flex flex-col gap-y-6">
       <div class="ps-10 py-6 bg-[#123b8a]">
-        <h2 class="text-[#fff] text-[1.75rem] font-bold">Keys Skills & Tools</h2>
+        <h2 class="text-[#fff] text-[1.75rem] font-bold">Expertise & Tools</h2>
       </div>
       <ul class="list-disc pl-4">
-        <li>Version control with Git, and Github</li>
-        <li>Responsive Design & PWA</li>
-        <li>VS Code</li>
-        <li>Figma</li>
-        <li>Intermediate level in JS/TS and Frontend Frameworks(React,Vue)</li>
-        <li>Beginner level in Component Libraries(Vuetify,Antd) and Angular</li>
-        <li>Intermediate Tailwindcss/HTML</li>
-        <li>Integrate APIs</li>
-        <li>Debugging</li>
-        <li>Continuous Learning</li>
-        <li>Communication and Teamwork</li>
-        <li>Diligent and open minded</li>
+        <li>Version Control: Git & GitHub (Intermediate ,Eager to learn more)</li>
+        <li>UX/UI Development: Responsive Design, PWAs (Intermediate ,Eager to learn more)</li>
+        <li>Development Environment: VS Code (Intermediate)</li>
+        <li>JavaScript/TypeScript: (Intermediate ,Eager to learn more) & Frameworks:
+          <ul class="list-disc pl-4">
+            <li>React, Vue (Intermediate, Strong Foundation)</li>
+            <li>Vuetify (Basic Understanding)</li>
+            <li>Angular (Intermediate, Eager to learn more)</li>
+          </ul>
+        </li>
+        <li>Tailwind CSS & HTML: Intermediate (Strong Foundation)</li>
+        <li>API Integration: Proficient</li>
+        <li>Debugging Skills: Adept at Troubleshooting and Problem-Solving</li>
       </ul>
+      <div class="pt-2">
+        <li>Soft Skills: Continuous Learning, Effective Communication, Teamwork, Diligent, Open-Minded</li>
+      </div>    
     </div>
     <div class="flex flex-col gap-y-6">
       <div class="ps-10 py-6 bg-[#123b8a]">
@@ -123,10 +127,5 @@
         <li class="list-disc">AWS Certified Cloud practitioner</li>
       </ul>
     </div>
-    <!-- <div>
-      <div class="ps-10 py-6 bg-[#123b8a]">
-        <h2 class="text-[#fff] text-[1.75rem] font-bold">Reference</h2>
-      </div>
-    </div> -->
   </v-container>
 </template>
