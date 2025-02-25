@@ -11,11 +11,11 @@
         <span>Frontend Developer</span>
         <div class="flex gap-2">
           <a  href="https://www.linkedin.com/in/silas-owu-2475301b0/"
-              target="_" >
+              target="_"  title="view linkedin profile">
               <img :src="LinkedIn" alt="behance-logo" class="w-[1.4375rem] h-[1.4375rem]" /> 
           </a>
           <a  href="https://github.com/Sye-5pace"
-              target="_" >
+              target="_"  title="view github profile">
               <img :src="Github" alt="Github-logo" class="w-[1.4375rem] h-[1.4375rem]" /> 
           </a>
         </div>
