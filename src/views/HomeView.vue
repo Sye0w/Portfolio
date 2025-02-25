@@ -26,6 +26,10 @@ import Portfolio from '@/assets/portfolioimg.png'
 import Pwa from '@/assets/pwa.png'
 import PwaLogo from '@/assets/pwa-sticker.png'
 import Pointer from '@/assets/pointer.png'
+import PasswordBg from '@/assets/PasswordBg.jpg'
+import ProductListBg from '@/assets/ProductBg.jpg'
+import Sass from '@/assets/sass.jpg'
+import Showcase from '@/assets/showcase.jpg'
 
 
 
@@ -38,6 +42,20 @@ interface Project {
 }
 
 const data: Project[] = [
+  {
+    title: 'Style Showcase',
+    desc: 'This application demonstrates proficiency with Sass for styling and advanced features... ',
+    link: 'https://style-showcase-hsor.vercel.app/',
+    stacks: [{ sass: Sass }, {angular:Angular}],
+    image: Showcase
+  },
+  {
+    title: 'Password Generator',
+    desc: 'An interactive web app that creates passwords that reflects best practices for secure and strong passwords ',
+    link: 'https://password-generator-alpha-six.vercel.app',
+    stacks: [{ tailwind: Tailwind }, {angular:Angular}],
+    image: PasswordBg
+  },
   {
     title: 'Galleria Slideshow',
     desc: 'An art gallery with paintings from some great artist in history',
@@ -60,24 +78,24 @@ const data: Project[] = [
     image: RestBg
   },
   {
-    title: 'Ecommerce product page',
-    desc: 'An ecommerce platform for a single product',
-    link: 'https://ecommerce-product-page-gray-pi.vercel.app',
-    stacks: [{ tailwind: Tailwind }, { ts: TS }, { html: Html }, { vite: Vite },{ vue: Vue}],
-    image: EcommerceBg
+    title: 'Product listing app',
+    desc: 'An platform for ordering meals similar to ecommerce platform with carts for placing orders',
+    link: 'https://product-list-app-indol.vercel.app/',
+    stacks: [{ tailwind: Tailwind }, {angular: Angular}],
+    image: ProductListBg
   },
   {
     title: 'Todo App',
     desc: 'A classic todo app with a few twists! This app includes a dark/light theme toggle and drag & drop reordering for anyone wanting an extra taste',
     link: 'https://todo-app-kappa-three-35.vercel.app',
-    stacks: [{ tailwind: Tailwind }, {ang: Angular }, { html: Html },{pwa: Pwa}],
+    stacks: [{ tailwind: Tailwind }, {angular: Angular }, { html: Html },{pwa: Pwa}],
     image: TodoBg
   },
   {
     title: 'Planets fact site',
     desc: 'A site visualizing info about planets in the solar system',
     link: 'https://planets-fact-site-83yc.vercel.app',
-    stacks: [{ tailwind: Tailwind }, { js: JS }, { html: Html }, { vite: Vite },{react: React}],
+    stacks: [{ tailwind: Tailwind }, { vite: Vite },{react: React}],
     image: PlanetBg
   },
   {
@@ -89,24 +107,17 @@ const data: Project[] = [
     image: GithubUserBg
   },
   {
-    title: 'Myteam multi-page site',
-    desc: 'An informational website for showcasing talents for companies, team building experience and collaborations.',
-    link: 'https://myteam-multipage-website-5yeus.vercel.app/',
-    stacks: [{ tailwind: Tailwind }, { js: JS }, { html: Html }, { vite: Vite }],
-    image: MyteamBg
-  },
-  {
     title: 'Entertainment web app',
     desc: 'A movie site visualizing categories of movies and preferences that can be made',
-    link: 'https://entertainment-web-app-rosy-omega.vercel.app/',
-    stacks: [{ tailwind: Tailwind }, { ts: TS }, { vue: Vue }, { html: Html }, { vite: Vite }],
+    link: 'https://ng-entertainment-web.vercel.app/',
+    stacks: [{ Sass: Sass },  { angular: Angular } ],
     image: EntertainBg
   },
   {
     title: 'Product feedback app',
     desc: 'A platform that user share feedbacks about products.',
     link: 'https://product-feedback-seven.vercel.app/',
-    stacks: [{ tailwind: Tailwind }, { ts: TS }, { vue: Vue }, { vuetify: Vuetify }, { html: Html }, { vite: Vite }],
+    stacks: [{ tailwind: Tailwind }, { ts: TS }, { vue: Vue }, { vuetify: Vuetify },  { vite: Vite }],
     image: ProductBg
   }
 ]
@@ -122,7 +133,7 @@ const data: Project[] = [
         </div>
         <div class="text-[2.5rem] mobile:text-[2rem] mobile:flex mobile:flex-col mobile:gap-y-2">
           <h1 class="font-black font-playfair"> I'm  Silas Owu</h1>
-          <h3 class="font-playfair text-[#123b8a] font-black">Frontend Developer</h3>
+          <h3 class="font-playfair text-[#123b8a] font-black">Frontend Engineer</h3>
           <p class=" font-regular w-[30rem] text-[1rem] mobile:w-full">
             Excited to show you what what I've been working on! 
             I'm on a self-paced journey to become a skilled software engineer,
@@ -152,7 +163,7 @@ const data: Project[] = [
     </section>
     <section class="w-full h-[7rem] bg-gradient-to-r from-[#0A234F] to-[#E9F0FF]  flex items-center justify-center gap-[8rem] mobile:gap-6 rounded-tr-4 rounded-br-4">
       <div class="text-white flex flex-col items-center justify-center ">
-        <h3>1+</h3>
+        <h3>2+</h3>
         <p class="text-[0.635rem] font-thin">Years of Experience</p>
       </div>
       <div class="text-white flex flex-col items-center justify-center ">
@@ -160,7 +171,7 @@ const data: Project[] = [
         <p class="text-[0.635rem] font-thin">Happy Clients</p>
       </div>
       <div class="text-white flex flex-col items-center justify-center ">
-        <h3>10+</h3>
+        <h3>13+</h3>
         <p class="text-[0.635rem] font-thin">Projects done</p>
       </div>
     </section>

@@ -4,10 +4,10 @@
       Welcome to my porfolio! I'm Silas Owu, 
     </h1>
     <p>
-      A proficient frontend developer with an imaginative 
-      passion for frontend developments. As a frontend developer,
-      I have cultivated diverse skills set and keen eye for Software development,
-      UI/UX design, Machine learning and Cloud computing. For more information find me on LinkedIn
+      A proficient frontend engineer with an imaginative 
+      passion for software developments. As a frontend developer,
+      I have cultivated diverse skills set and keen eye for software development and
+      UI/UX design.For more information find me on LinkedIn
     </p>
     <p>
       I'm always open to new opportunities, collaborations, and tech talks.

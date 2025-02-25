@@ -44,9 +44,13 @@
       </div>
       <ul class="pl-4">
         <li class="text-[#272727] text-[1.25rem] list-disc">
-          Highly motivated Frontend Developer with than a year of experience.
-          I'm a fast learner, fueled by curiosity and a passion for UI/UX development through code.
-          Through continuous learning and building projects, I've gained a strong foundation in web development.
+          Frontend Engineer with 2+ years of experience building responsive, user-focused web applications using React, Angular, TypeScript, and
+          modern CSS frameworks like Tailwind and SASS. Skilled in creating reusable component libraries, customizing Angular Material co, and
+          leveraging the latest Angular features such as standalone components and signals. Experienced in theming (light/dark modes),
+          responsive design, and optimizing performance through code splitting and SOLID principles. Proficient in unit testing and Figma for
+          translating designs into pixel-perfect components. Strong collaborator, adept at integrating templated components and improving
+          development workflows.
+
         </li>
       </ul>
     </div>
@@ -56,7 +60,7 @@
       </div>
       <div class="pl-4">
         <div class="flex justify-between font-medium text-[1.375rem] tablet:text-[1.125rem] text-[#272727] mobile:flex-col mobile:gap-y-2 ">
-          <h3>Amalitech Ghana, National Service Personnel Frontend Junior Associate</h3>
+          <h3>Amalitech Ghana, National Service Personnel Frontend Engineer</h3>
           <span >Nov 2022 - Sept 2023</span>
         </div>
         <ul class="list-disc">
@@ -90,16 +94,16 @@
       </div>
       <ul class="list-disc pl-4">
         <li>Version Control: Git & GitHub (Intermediate ,Eager to learn more)</li>
-        <li>UX/UI Development: Responsive Design, PWAs (Intermediate ,Eager to learn more)</li>
-        <li>Development Environment: VS Code (Intermediate)</li>
+        <li>UX/UI Development: Responsive Design, PWAs </li>
+        <li>Development Environment: VS Code </li>
         <li>JavaScript/TypeScript: (Intermediate ,Eager to learn more) & Frameworks:
           <ul class="list-disc pl-4">
-            <li>React, Vue (Intermediate, Strong Foundation)</li>
-            <li>Vuetify (Basic Understanding)</li>
-            <li>Angular (Intermediate, Eager to learn more)</li>
+            <li>React, Vue </li>
+            <li>Vuetify,Angular Material and PrimeNG </li>
+            <li>Angular </li>
           </ul>
         </li>
-        <li>Tailwind CSS & HTML: Intermediate (Strong Foundation)</li>
+        <li>Tailwind,Sass, CSS & HTML</li>
         <li>API Integration: Proficient</li>
         <li>Debugging Skills: Adept at Troubleshooting and Problem-Solving</li>
       </ul>
